@@ -1,0 +1,163 @@
+/* ================================================================ */
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.body,
+.login-body,
+.contact-body,
+.bg-image,
+.cart-page {
+  height: 84.8vh;
+}
+
+.icon {
+  font-size: 10vh;
+}
+
+/* ================================================================ */
+/* Home Page */
+.bg-image {
+  background-image: url("/public/images/bg-img1.jpg");
+  background-size: cover;
+}
+
+/* ================================================================ */
+/* Discover Page */
+.products {
+  height: 77vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.card-img {
+  width: 50%;
+  height: 50%;
+}
+.rating {
+  width: 30%;
+}
+.superscript {
+  vertical-align: super;
+}
+.products .row .card {
+  cursor: pointer;
+}
+.products .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 85%;
+  right: 2%;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  width: 4%;
+  height: 7%;
+  border-radius: 100%;
+  font-size: 2em;
+}
+.products .cart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.products .cart .cart-text {
+  position: fixed;
+  top: 86.7%;
+  color: black;
+  font-weight: bold;
+}
+
+/* ================================================================ */
+/* Cart Page */
+.cart-page {
+  overflow-y: scroll;
+}
+.cart-page .bill {
+  position: fixed;
+  top: 82%;
+}
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.331);
+}
+.item img {
+  width: 100%;
+}
+
+/* ================================================================ */
+/* Contact Us Page */
+.contact-body {
+  background-image: url("/public/images/contact.jpg");
+  background-size: cover;
+  padding-left: 5%;
+}
+/* About Us Page */
+
+/* ================================================================ */
+/* Login/Register Page */
+.login {
+  color: red;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.input-group-prepend {
+  min-width: 10vw;
+}
+
+/* ================================================================ */
+/* Media Queries for Responsive Website */
+@media only screen and (max-width: 800px) {
+  .body {
+    display: block !important;
+    overflow-y: scroll;
+  }
+  .card {
+    display: block !important;
+    width: 90% !important;
+  }
+  .contact-body {
+    background-image: none;
+  }
+  .bg-image {
+    background-image: none;
+    padding: 0;
+  }
+  .home-text {
+    display: block !important;
+    font-size: 3em;
+    padding: 5%;
+  }
+  .products .card {
+    margin-left: 5%;
+  }
+  .products .cart {
+    width: 12%;
+    height: 7%;
+  }
+  .cart-page {
+    height: 83vh;
+  }
+  .item,
+  .cart-page .card-header {
+    margin-left: 12%;
+  }
+  .item .title,
+  .item .price {
+    justify-content: center;
+  }
+}
